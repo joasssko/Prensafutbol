@@ -1,0 +1,582 @@
+@charset "utf-8";
+/*
+Theme Name: Prensafutbol
+Theme URL: http://www.prensafutbol.cl/
+Description: Tema para Prensafutbol
+Version: 3.0 (vs 1.0 on WP)
+Author: Upmedia
+Author URL: http://upmedia.cl
+*/
+
+
+*{
+	padding: 0px;
+	margin: 0px;
+}
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+ 
+.clearfix {
+	display: inline-block;
+}
+ 
+html[xmlns] .clearfix {
+	display: block;
+}
+ 
+* html .clearfix {
+	height: 1%;
+}
+
+
+.left, .izq{float: left;}
+.right, .der{float:right;}
+.clear{ clear:both}
+
+
+h1, h2, h3, h4, h5 , h6{ font-family: 'Roboto Slab', georgia , serif; letter-spacing:-1px;}
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a{ color: #333; text-decoration:none; }
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover{ color: #A9272D; text-decoration:none; }
+
+h1{ font-size:30px;}
+h2{ font-size:26px;}
+h3{ font-size:20px;}
+h4{ font-size:16px;}
+h5{ font-size:12px;}
+h6{ letter-spacing:0px; font-weight:400}
+
+.column-1-2 { width: 48% }
+.column-1-3 { width: 300px }
+.column-2-3 { width: 630px }
+.column-1-4 { width: 22% }
+.column-2-4 { width: 44% }
+.column-3-4 { width: 74% }
+.column-1-5 { width: 180px }
+.column-2-5 { width: 375px }
+.column-3-5 { width: 570px }
+.column-4-5 { width: 765px }
+.column-1-6 { width: 155px }
+.column-5-6 { width: 82.67% }
+.column {	position: relative; margin: 0 30px 0 0; float: left;}
+.column.column-1-5 , .column.column-2-5 , .column.column-3-5 , .column.column-4-5 {	position: relative; margin: 0 15px 0 0; float: left;}
+.column.column-1-6 {margin: 0 8px 0 0;}
+.column.column-2-3{margin-right:40px;}
+.column-last { margin-right: 0 !important; clear: right;}
+
+.alignleft { display: inline;	float: left; margin-right: 15px; }
+.alignright { display: inline; float: right; margin-left: 15px;}
+.aligncenter {	clear: both; display: block; margin-left: auto;	margin-right: auto; }
+
+body{}
+
+strong , b{ font-weight:700}
+em , i{font-style:italic;}
+small{font-size:10px;}
+
+p {  }
+.separator{padding:15px 0;}
+.border { border-bottom: 1px solid #ccc; padding: 5px 0 0 0; margin-bottom: 5px;}
+
+
+/*******************************************************************************************/
+/*************************************HEADER************************************************/
+/*******************************************************************************************/
+
+.home{ /*background-image:url(images/home-bg.png); background-repeat:repeat-x; background-position:top center;*/}
+
+
+#header{ background-image:url(images/gris.png); background-repeat: repeat-x; background-position: center 15px; margin-top:15px }
+#header .container{ background-image:url(images/rojo.png); background-repeat: repeat-x; background-position: center 58px;}
+
+.search{padding: 23px 0 0 0; font-size: 18px;}
+.search input{font-size: 12px;padding: 2px 10px 2px 10px;width: 200px;}
+
+#menu-navegacion li{ float:left; padding:0 8px; font-size:12px; font-weight:400; font-family:helvetica, arial, sans-serif; border-top: 1px solid #ccc}
+#menu-navegacion li:first-child{ padding-left:0px;}
+#menu-navegacion li:last:child{ padding-right:0px;}
+
+#menu-navegacion li:hover {border-top:1px solid #EE0000}
+#menu-navegacion li.current-menu-item , #menu-navegacion li.current-menu-ancestor{border-top:2px solid #EE0000}
+#menu-navegacion li.current-menu-item a , #menu-navegacion li.current-menu-ancestor a{ padding-top: 9px}
+#menu-navegacion li a{color: #333}
+
+#menu-navegacion li.menu-item-has-children{}
+
+#menu-navegacion .caret{ border-top: #ccc 4px solid }
+
+#menu-item-12 .caret , #menu-item-17 .caret, #menu-item-20 .caret , #menu-item-37 .caret , #menu-item-45 .caret {
+right: -5px;
+width: 0px !important;
+margin: 0px -10px;
+float: right;
+top: 5px;
+position: relative;
+}
+
+.menu-item .sub-menu .caret {
+float: right;
+top: 5px !important;
+position: relative;
+margin: 0px !important;
+}
+
+.menu-item .sub-menu .caret{ float:right; top:5px; position:relative}
+
+.nav ul ul {border-right: 1px solid #f2f2f2;}
+.nav ul ul a {}
+
+.nav ul ul ul {
+  left: 100%;
+  top: 0;
+}
+.nav li {}
+
+.nav li a {
+  display: block;
+
+}
+.nav li a:hover {
+  background-color: none;
+  background-color: transparent;
+}
+.nav li ul {
+  background: #f5f6f6;
+  display: none;
+  height: auto;
+  position: absolute;
+  width: 180px;
+  z-index: 200;
+  /*top:1em;
+  /*left:0;*/
+
+}
+.nav li:hover > ul {
+  display: block;
+}
+.nav li li {
+	display: block;
+	float: none !important;
+	clear: both;
+	position: relative;
+	width: 180px;
+	padding: 0 !important;
+}
+.nav li ul a {
+  display: block !important;
+  font-size: 12px;
+  font-style: normal;
+  padding: 10px;
+  text-align: left;
+  text-decoration:none;
+}
+.nav li ul a:hover {
+ }
+.nav p {
+  clear: left;
+}
+.nav .active > a {
+  color: #ffffff;
+}
+.nav .active > a:hover {
+  color: white;
+}
+
+
+
+#menuequipos {
+width: 870px;
+float: right;
+top: -40px;
+position: relative;
+height: 80px;
+margin-bottom: -60px;
+}
+
+#menuequipos ul{ margin:0 !important}
+
+
+#menuequipos ul li {
+float: left;
+list-style: none;
+width:40px; text-align:center;
+ height:55px; display:block
+}
+
+#menuequipos ul li img{ width:32px; height:auto; position:relative}
+
+
+#segunda, #internacional{ display:none}
+
+
+.selector-division button, .selector-division li {
+width: 105px;
+font-size:12px;
+text-align:left;
+}
+
+.selector-division li{ float: none !important;
+clear: both;
+height: auto !important;
+padding: 5px;
+text-align: left !important;
+width: 105px !important;}
+
+
+.selector-division .btn .caret {
+float: right;
+top: 7px;
+position: relative;
+}
+
+
+.selector-division {
+width: 105px !important;
+float: right;
+}
+
+
+
+
+
+/*******************************************************************************************/
+/*************************************GENERALES*********************************************/
+/*******************************************************************************************/
+
+.post{ padding-bottom:30px;}
+.post h3{ margin:5px 0;}
+.post .fecha{ font-size:10px; padding:0 0 5px 0; display:block; color:#a2a2a2}
+.post p{ line-height:150%; margin-bottom:15px; font-size:13px; color:#525252}
+.post img{ }
+.post .categoriapost{color: #A9272D;font-size: 12px;width: 100%;background-color: #f2f2f2;padding: 3px 3px 3px 10px;display: block;font-weight: 700;text-transform: uppercase;border-top: 4px solid #A9272D;}
+.post .categoriapost:hover{ text-decoration:none; color:#000}
+.excerpt{ font-weight:700}
+
+.widget{ border:1px solid #666; border-top:4px solid #666 !important;}
+.widget h4{ margin: 10px 0 0 10px}
+.widget ul li{ list-style:none; padding: 0 0 10px 0; font-size:11px; clear:both;}
+
+.inner{ padding:10px;}
+
+#galeria{}
+
+.morelink { float: right}
+.morelink a{ color: #A9272D;font-size: 10px;padding: 3px 3px 3px 20px;font-weight: 700;text-transform: uppercase; background-image:url(images/imgs.png); background-repeat:no-repeat; background-position:1px 0px;}
+.morelink a:hover{ color:#000; text-decoration:none; background-position:1px -20px;}
+
+
+
+/*******************************************************************************************/
+/*************************************PAGINACION********************************************/
+/*******************************************************************************************/
+
+.navigation{ text-align:center}
+.wp-paginate {padding:0; margin:0;}
+.wp-paginate li {display:inline; list-style:none;}
+.wp-paginate a {background:#ddd; border:1px solid #ccc; color:#666; margin-right:4px; padding:3px 6px; text-align:center; text-decoration:none;}
+.wp-paginate a:hover, .wp-paginate a:active {background:#ccc; color:#888;}
+.wp-paginate .title {color:#555; margin-right:4px; font-size:10px; font-family:roboto slab, georgia, serif;}
+.wp-paginate .gap {color:#999; margin-right:4px;}
+.wp-paginate .current {color:#fff; background: #A9272D; border:1px solid #525252; margin-right:4px; padding:3px 6px;}
+.wp-paginate .page {}
+.wp-paginate .prev, .wp-paginate .next {}
+
+/* style overrides for comments pagination */
+.wp-paginate-comments {}
+.wp-paginate-comments li {}
+.wp-paginate-comments a {}
+.wp-paginate-comments a:hover, .wp-paginate-comments a:active {}
+.wp-paginate-comments .title {}
+.wp-paginate-comments .gap {}
+.wp-paginate-comments .current {}
+.wp-paginate-comments .page {}
+.wp-paginate-comments .prev, .wp-paginate-comments .next {}
+
+
+
+
+
+
+
+
+
+
+
+/*******************************************************************************************/
+/*************************************SINGLE************************************************/
+/*******************************************************************************************/
+
+
+.fontSize{ float: right; margin:0px}
+.fontSize li{list-style: none;float: left;display: inline-block;padding: 5px;border: 1px solid #ccc ; line-height: 12px;vertical-align: middle;margin: 0 2px;font-weight: 300;width: 25px;text-align: center;height: 25px;top: 0px;}
+.fontSizeSmall{ font-size:13px;}
+.fontSizeMedium{ font-size:15px;}
+.fontSizeLarge{ font-size:17px;}
+.fontSize li a {color: #333;top: 0px;font-size: 13px;}
+
+.single h1{ margin:5px 0}
+.single .post {border-bottom: 1px solid #ccc;padding-bottom: 15px;margin-bottom: 15px;}
+.single .excerpt{margin-top: 15px;}
+
+.posted-on {font-size: 11px; font-weight:700;}
+.posted-on a{ color:#A9272D; text-decoration:none}
+.posted-on a:hover{ color: #333; text-decoration:none}
+
+.relacionados ul li {font-size: 12px;list-style-position: inside;}
+.relacionados ul li a{ color:#333; text-decoration:none; font-weight:400}
+.relacionados ul li a:hover{ color :#A9272D; text-decoration:none}
+
+.gallery-item {padding: 0px;width: 150px !important;height: 150px;margin: 3px 4px 3px 3px !important;}
+.gallery-icon img {border: 0px !important;}
+/******************************************FOOTER*******************************/
+#pre-footer{ background-image:url(http://127.0.0.1:8080/prensafutbol/wp-content/uploads/2013/12/background_base.png) ; background-repeat:repeat-x; background-position:top}
+#pre-footer h4{ color:#A9272D;}
+.footerposts li { font-size: 11px;}
+.footerposts li h5{ letter-spacing:0px; font-weight:700;}
+.footerposts .morelink a {font-size: 9px; background-position:1px -40px;}
+.footerposts .morelink a:hover {background-position:1px -60px;}
+
+
+#footer-menu {border-top: 1px solid #ccc;}
+#footer-menu .container{padding-top: 10px;border-top: 3px solid #A9272D;}
+#footer-menu li{ list-style:none; line-height:100%; font-family: Roboto Slab, georgia, sans-serif; padding: 0 0 2px 0;}
+#footer-menu li a {font-size: 10px; padding: 0;margin: 0;line-height: 100%; color:#666}
+#footer-menu li a:hover { color:#A9272D}
+
+
+
+
+/*******************************************************************************************/
+/*************************************Floating Adsense Banner*******************************/
+/*******************************************************************************************/
+#ad_divRight {
+overflow: hidden;
+border: 1px solid #3c95d9;
+background-color: #fff;
+right: 10px;
+position:fixed;
+top: 20%;
+margin-left: 0px;
+float: right;
+background-color: #ffffff;
+padding: 0;
+z-index: 10;
+}
+
+#ad_divLeft {
+overflow: hidden;
+border: 1px solid #3c95d9;
+background-color: #fff;
+left: 10px;
+position:fixed;
+top: 20%;
+margin-right: 0px;
+float: Left;
+background-color: #ffffff;
+padding: 0;
+z-index: 10;
+}
+
+@media (max-width: 1339px) {
+  .footer-banners {
+    display: none !important;
+  }
+}
+
+/*.footer-banners {
+width: 1340px !important;
+margin: 0 auto !important;
+z-index: -1;
+position: fixed;
+top: 20%;
+text-align: center;
+left: 0px;
+right: 0px;
+}*/
+
+
+
+/*******************************************************************************************/
+/*************************************BXSLIDER**********************************************/
+/*******************************************************************************************/
+.bx-wrapper {
+	position: relative;
+	padding: 0;
+}
+
+.bx-wrapper img {
+	max-width: 100%;
+	display: block;
+}
+
+/** THEME
+===================================*/
+
+.bx-wrapper .bx-pager,
+.bx-wrapper .bx-controls-auto {
+	position: absolute;
+	bottom: -30px;
+	width: 100%;
+}
+
+/* LOADER */
+
+.bx-wrapper .bx-loading {
+	min-height: 50px;
+	background: url(images/bx_loader.gif) center center no-repeat #fff;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2000;
+}
+
+/* PAGER */
+
+.bx-wrapper .bx-pager {
+	text-align: center;
+	font-size: .85em;
+	font-family: Arial;
+	font-weight: bold;
+	color: #666;
+	padding-top: 20px;
+}
+
+.bx-wrapper .bx-pager .bx-pager-item,
+.bx-wrapper .bx-controls-auto .bx-controls-auto-item {
+	display: inline-block;
+	*zoom: 1;
+	*display: inline;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a {
+	background: #666;
+	text-indent: -9999px;
+	display: block;
+	width: 10px;
+	height: 10px;
+	margin: 0 5px;
+	outline: 0;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a:hover,
+.bx-wrapper .bx-pager.bx-default-pager a.active {
+	background: #000;
+}
+
+/* DIRECTION CONTROLS (NEXT / PREV) */
+
+.bx-wrapper .bx-prev {
+	left: 10px;
+	background: url(images/imgs.png) no-repeat -20px -4px;
+}
+
+.bx-wrapper .bx-next {
+	right: 10px;
+	background: url(images/imgs.png) no-repeat -50px -4px;;
+}
+
+/*.bx-wrapper .bx-prev:hover {
+	background-position: 0 0;
+}
+
+.bx-wrapper .bx-next:hover {
+	background-position: -43px 0;
+}*/
+
+.bx-wrapper .bx-controls-direction a {
+	position: absolute;
+	top: 50%;
+	margin-top: -16px;
+	outline: 0;
+	width: 32px;
+	height: 32px;
+	text-indent: -9999px;
+	z-index: 9999;
+}
+
+.bx-wrapper .bx-controls-direction a.disabled {
+	display: none;
+}
+
+/* AUTO CONTROLS (START / STOP) */
+
+.bx-wrapper .bx-controls-auto {
+	text-align: center;
+}
+
+.bx-wrapper .bx-controls-auto .bx-start {
+	display: block;
+	text-indent: -9999px;
+	width: 10px;
+	height: 11px;
+	outline: 0;
+	background: url(images/controls.png) -86px -11px no-repeat;
+	margin: 0 3px;
+}
+
+.bx-wrapper .bx-controls-auto .bx-start:hover,
+.bx-wrapper .bx-controls-auto .bx-start.active {
+	background-position: -86px 0;
+}
+
+.bx-wrapper .bx-controls-auto .bx-stop {
+	display: block;
+	text-indent: -9999px;
+	width: 9px;
+	height: 11px;
+	outline: 0;
+	background: url(images/controls.png) -86px -44px no-repeat;
+	margin: 0 3px;
+}
+
+.bx-wrapper .bx-controls-auto .bx-stop:hover,
+.bx-wrapper .bx-controls-auto .bx-stop.active {
+	background-position: -86px -33px;
+}
+
+/* PAGER WITH AUTO-CONTROLS HYBRID LAYOUT */
+
+.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {
+	text-align: left;
+	width: 80%;
+}
+
+.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto {
+	right: 0;
+	width: 35px;
+}
+
+/* IMAGE CAPTIONS */
+
+.bx-wrapper .bx-caption {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	/*background: #666\9;
+	background: rgba(80, 80, 80, 0.75);*/
+	width: 100%;
+	background-image:url(images/slide-caption.png); background-repeat:repeat-x; background-position:top center;
+}
+
+.bx-wrapper .bx-caption span {
+	color: #fff;
+	font-family: Arial;
+	display: block;
+	font-size: .85em;
+	padding: 10px;
+}
+
+.bx-wrapper .bx-caption span p{ margin: 0}
+
+.bx-wrapper h2{ font-weight:300; margin:5px 0;}
