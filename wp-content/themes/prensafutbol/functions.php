@@ -64,6 +64,25 @@ add_action('wp_enqueue_scripts', 'call_scripts');
 <?php
 //Post type register
 
+add_action('init', 'partidos_register');
+function partidos_register() {
+    $args = array(
+        'label' => 'Partidos',
+        'singular_label' => 'Partido',
+        'public' => true,
+		'menu_position' => 14, 
+        '_builtin' => false,
+        'capability_type' => 'post',
+		'has_archive' => true,
+        'hierarchical' => false,
+        'rewrite' => array( 'slug' => 'partidos'),
+        'supports' => array('title', 'revisions', 'excerpt' )
+    );
+
+    register_post_type('partidos', $args);
+    flush_rewrite_rules();
+}
+
 add_action('init', 'prensa_futbol_tv_register');
 function prensa_futbol_tv_register() {
     $args = array(

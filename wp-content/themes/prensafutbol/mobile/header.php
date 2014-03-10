@@ -80,7 +80,7 @@ jQuery(document).ready(function(){
 						
 						if($tipo[0]->slug == 'mobile-top-plus-320x370'){?>
 							
-							<?php if (!isset($_COOKIE['galletitaBanner'])){ ?>
+							<?php if (!isset($_COOKIE['galletitaBanner'])){?>
 								<?php //setcookie('galletitaBanner', true,  time()+120);?>
 								<?php setcookie('galletitaBanner', true,  time()+86400);?>
 								<style type="text/css">
@@ -93,7 +93,7 @@ jQuery(document).ready(function(){
 								</style>
 								<script type="text/javascript">
 									jQuery(document).ready(function() {
-										jQuery('#bannerLarge').delay(5000).slideUp('slow', function() {
+										jQuery('#bannerLarge').delay(3000).slideUp('slow', function() {
 											jQuery('#bannerSmall').slideDown('fast')
 										});
 										

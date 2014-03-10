@@ -58,7 +58,7 @@ h6{ letter-spacing:0px; font-weight:400}
 .column-1-4 { width: 22% }
 .column-2-4 { width: 44% }
 .column-3-4 { width: 74% }
-.column-1-5 { width: 180px }
+.column-1-5 { width: 182px }
 .column-2-5 { width: 375px }
 .column-3-5 { width: 570px }
 .column-4-5 { width: 765px }
@@ -214,10 +214,39 @@ width:40px; text-align:center;
 
 #segunda, #internacional{ display:none}
 
-
+.term-deportes-copiapo #primera{ display:none} .term-deportes-copiapo #segunda{ display:block}
 .term-lota-schwager #primera{ display:none} .term-lota-schwager #segunda{ display:block}
+.term-naval-de-talcahuano #primera{ display:none} .term-naval-de-talcahuano #segunda{ display:block}
+.term-magallanes #primera{ display:none} .term-magallanes #segunda{ display:block}
+.term-san-felipe #primera{ display:none} .term-san-felipe #segunda{ display:block}
+.term-san-luis #primera{ display:none} .term-san-luis #segunda{ display:block}
+.term-deportes-temuco #primera{ display:none} .term-deportes-temuco #segunda{ display:block}
+.term-santiago-morning #primera{ display:none} .term-santiago-morning #segunda{ display:block}
+.term-san-marcos-de-arica #primera{ display:none} .term-san-marcos-de-arica #segunda{ display:block}
+.term-barnechea #primera{ display:none} .term-barnechea #segunda{ display:block}
+.term-coquimbo-unido #primera{ display:none} .term-coquimbo-unido #segunda{ display:block}
+.term-la-serena #primera{ display:none} .term-la-serena #segunda{ display:block}
+.term-curico-unido #primera{ display:none} .term-curico-unido #segunda{ display:block}
+.term-deportes-concepcion #primera{ display:none} .term-deportes-concepcion #segunda{ display:block}
 
-
+.term-uefa-champions-league #primera{ display:none} .term-uefa-champions-league #internacional{ display:block}
+.term-calcio-italiano #primera{ display:none} .term-calcio-italiano #internacional{ display:block}
+.term-copa-libertadores #primera{ display:none} .term-copa-libertadores #internacional{ display:block}
+.term-premier-league #primera{ display:none} .term-premier-league #internacional{ display:block}
+.term-liga-espanola #primera{ display:none} .term-liga-espanola #internacional{ display:block}
+.term-uefa-europa-league #primera{ display:none} .term-uefa-europa-league #internacional{ display:block}
+.term-copa-sudamericana #primera{ display:none} .term-copa-sudamericana #internacional{ display:block}
+.term-barcelona #primera{ display:none} .term-barcelona #internacional{ display:block}
+.term-real-madrid #primera{ display:none} .term-real-madrid #internacional{ display:block}
+.term-manchester-city #primera{ display:none} .term-manchester-city #internacional{ display:block}
+.term-manchester-united #primera{ display:none} .term-manchester-united #internacional{ display:block}
+.term-chelsea #primera{ display:none} .term-chelsea #internacional{ display:block}
+.term-juventus #primera{ display:none} .term-juventus #internacional{ display:block}
+.term-ac-milan #primera{ display:none} .term-ac-milan #internacional{ display:block}
+.term-inter-de-milan #primera{ display:none} .term-inter-de-milan #internacional{ display:block}
+.term-palmeiras #primera{ display:none} .term-palmeiras #internacional{ display:block}
+.term-gremio #primera{ display:none} .term-gremio #internacional{ display:block}
+.term-monterrey #primera{ display:none} .term-monterrey #internacional{ display:block}
 
 .selector-division button, .selector-division li {
 width: 105px;
@@ -749,6 +778,16 @@ padding-top: 5px;
 .band { float: left; padding: 5px 4px;}
 
 .min-min{ border:1px solid #555; }
+
+
+/************************partidos *********************/
+.partidos{ min-height: 90px; padding: 10px 0; }
+.partidos a, .partidos a:hover{ color:#000; text-decoration:none;}
+.partidos .gr{ width:64px;}
+.partidos .gr , .partidos .time_data{ float:left; font-size:10px; font-family:helvetica, arial, sans-serif; text-align:center; line-height: 100%;}
+.partidos .equipo_ico{ width:35px !important ; min-height:35px !important; margin: 0 auto;}
+.partidos .equipo_name{ padding:0 5px; width:64px;}
+.partidos .time_data{ width:50px; font-weight:700}
 
 
 

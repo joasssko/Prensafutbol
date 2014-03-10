@@ -47,8 +47,11 @@
 </div>
 
 <div class="separator"></div>
+<?php }?>
 
+<?php get_template_part('partidos')?>
 
+<?php if(is_home()){?>
 <div id="pre-footer">
 	<div class="container">
 		<div class="row">
@@ -115,8 +118,6 @@
 	</div>
 </div>
 <?php }?>
-
-
 
 <?php get_template_part('footermenu')?>
 

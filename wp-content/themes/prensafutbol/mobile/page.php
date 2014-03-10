@@ -31,30 +31,38 @@
 					<div class="clear border"></div>
 					<h1><?php the_title()?></h1>
 					
-					
-					
-					
-					
-					<?php if($tipo[0]->slug == 'en-vivo'){?>
-					<?php 
-					$banners = get_posts(array('post_type' => 'banners' , 'posiciones' => 'mobile-mxm' , 'posts_per_page' => '1'));
-					if($banners){
-						foreach($banners as $banner):
+					<?php if(is_page(698)){?>
+					<div class="widget">
+						<div class="tab-pane" id="campeonatos">
+	  
+							<ul class="campeonatos_info">
 							
-							$tipobanner = wp_get_post_terms( $banner->ID, 'tipoBanner');
-							if($tipobanner[0]->slug == 'mobile-320x50'){
-								if(get_field('script' , $banner->ID)){
-									echo '<div class="bannerMiddleMobile">';
-									echo get_field('script' , $banner->ID);	
-									echo '</div>';
-								}
-							}															
-						endforeach;
-					}
-					?>
+							<?php $tablas = get_field('tablas');
+							$tabindex = 1;
+							foreach($tablas as $tabla){;
+							$tabindex++;
+							?>
+							
+								<li class="campeonato">
+									<div class="campeonato_head">
+										<h5 class="izq"><?php echo $tabla['titulo_tabla']?></h5>
+										<div class="morelink der"><a data-toggle="collapse" data-parent="#accordion" href="#torneo_<?php echo $tabindex?>" class="collapsed"></a></div>
+										<div class="clear"></div>
+									</div>
+									
+									<div id="torneo_<?php echo $tabindex?>" class="panel-collapse collapse">  
+										<?php echo $tabla['codigo_tabla']?>
+									</div>
+								</li>
+								<?php }?>  
+							</ul>
+					  
+					  </div>
+					</div>	
+					<?php }else{?>
+					<?php the_content()?>
 					<?php }?>
 					
-					<?php the_content()?>
 					
 					<div class="clear border"></div>
 										
