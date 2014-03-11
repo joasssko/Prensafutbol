@@ -97,7 +97,7 @@
 				</div>	
 			</div>
 			
-			<div id="sidebar" class="column column-1-3 column-last">
+			<div id="sidebar" class="column column-1-3 column-last" style="margin-top:40px">
 				<?php get_template_part('sidebar-single')?>
 				<div class="clear"></div>
 			</div>

@@ -35,7 +35,7 @@ if(get_field('bannersb' , $tipo.'_'.$typeID)){
 				}
 			}
 		endforeach;
-		echo '<div class="separator"></div>';
+		//echo '<div class="separator"></div>';
 }
 
 wp_reset_query();
@@ -54,7 +54,7 @@ if(get_field('modulos' , $modu.'_'.$typeID)){
 
 <?php //get_template_part('torneos')?>
 
-<div class="separator"></div>
+<!--<div class="separator"></div> -->
 
 <?php get_template_part('visto')?>
 

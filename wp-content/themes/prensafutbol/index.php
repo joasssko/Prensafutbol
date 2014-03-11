@@ -32,7 +32,7 @@ if ($detect->isMobile() && !$detect->isTablet()){
 					$post_thumbnail_id = get_post_thumbnail_id($post->ID);
 					$post_thumbnail_url = wp_get_attachment_image_src( $post_thumbnail_id , 'noticias_destacada');
 					?>					
-					<li><a href="<?php the_permalink()?>"><img src="<?php echo $post_thumbnail_url[0]?>" alt="" title="<h2><?php the_title()?></h2><?php the_excerpt()?>" /></a></li>
+					<li><a href="<?php the_permalink()?>"><img src="<?php echo $post_thumbnail_url[0]?>" alt="" title="<h3><?php the_title()?></h3><?php the_excerpt()?>" /></a></li>
 				<?php endwhile;?>
 				  
 				</ul>
@@ -51,7 +51,7 @@ if ($detect->isMobile() && !$detect->isTablet()){
 					$post_thumbnail_url = wp_get_attachment_image_src( $post_thumbnail_id , 'noticias_destacada');
 					
 					?>
-					<a data-slide-index="<?php echo $count?>" href=""><img src="<?php echo $post_thumbnail_url[0]?>" height="110" width="154" alt="" /></a>				
+					<a data-slide-index="<?php echo $count?>" href=""><img src="<?php echo $post_thumbnail_url[0]?>" height="100" width="154" alt="" /></a>				
 					
 				<?php endwhile;?>
 				  
@@ -59,9 +59,7 @@ if ($detect->isMobile() && !$detect->isTablet()){
 				
 				
 				<style type="text/css">
-				.bx-wrapper img {
-					min-width: 630px;
-				}
+				#slider .bx-wrapper{ width:628px}
 				</style>
 				
 			</div>
@@ -76,7 +74,7 @@ if ($detect->isMobile() && !$detect->isTablet()){
 						if($tipo[0]->slug == 'banner-rectangulo-mediano-300x250'){
 							if(get_field('script' , $banner->ID)){;
 									echo get_field('script' , $banner->ID);
-									if ($count==1){echo '<div class="separator" style="height: 57px;">&nbsp;</div>';};
+									if ($count==1){echo '<div class="separator" style="height: 46px;"></div>';};
 							}else{
 								echo get_the_post_thumbnail($banner->ID);	
 							}

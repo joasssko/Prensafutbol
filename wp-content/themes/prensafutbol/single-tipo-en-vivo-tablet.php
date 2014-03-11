@@ -97,7 +97,7 @@
 				</div>	
 			</div>
 			
-			<div id="sidebar" class="column column-1-3 column-last">
+			<div id="sidebar" class="column column-1-3 column-last" style="margin-top:40px">
 				
 				
 				<?php /* sidebar embeeded para testing */?>

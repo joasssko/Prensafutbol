@@ -49,7 +49,7 @@
 							
 							
 							$full = wp_get_attachment_image_src($imagen->ID, 'full');
-							echo '<a href="'.$full[0].'" rel="shadowbox[Lugares]" title="'.get_the_title($imagen->ID).'">';
+							echo '<a href="'.$full[0].'" rel="shadowbox[Lugares]" title="'.get_the_title($post->ID).'">';
 							echo wp_get_attachment_image( $imagen->ID, 'thumbnail' );
 							echo '</a>';
 						endforeach;
@@ -136,7 +136,7 @@
 				</div>	
 			</div>
 			
-			<div id="sidebar" class="column column-1-3 column-last">
+			<div id="sidebar" class="column column-1-3 column-last" style="margin-top:40px">
 				<?php get_template_part('sidebar')?>
 				<div class="clear"></div>
 			</div>

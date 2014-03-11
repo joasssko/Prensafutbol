@@ -17,7 +17,7 @@
 		
 		<style type="text/css">
 			#galeriaslider li img{ width:278px !important; height:194px !important}
-			#galeriaslider .bx-caption{ bottom: 10px;}
+			/*#galeriaslider .bx-caption{ bottom: 10px;}*/
 		</style>
 		
 	</div>

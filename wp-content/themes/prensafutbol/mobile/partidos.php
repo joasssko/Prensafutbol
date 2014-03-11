@@ -5,16 +5,16 @@
 		<h3>Resultado últimos partidos</h3>
 		
 		<div class="partidots">
-		<div class="separator border"></div>
-			<?php $partidos = get_posts(array('post_type'=>'partidos' , 'numberposts' => 5,'orderby'   => 'menu_order', 'order'     => 'ASC'));
+			<?php $partidos = get_posts(array('post_type'=>'partidos' , 'numberposts' => 6,'orderby'   => 'menu_order', 'order'     => 'ASC'));
 				//var_dump($partidos);
 				$p_count = 0;
 				$partido_last = '';
 				foreach ($partidos as $partido):
 					$link = get_field('noticia_asociada', $partido->ID);
 					$p_count ++;
-					if($p_count == 5){$partido_last = 'column-last';};	
-					echo '<div class="column column-1-5 '.$partido_last.' partidos">';
+					$partido_last = '';
+					if($p_count % 2 == 0){$partido_last = 'column-last';};	
+					echo '<div class="partidos">';
 					echo '<a href="'.get_permalink($link[0]->ID).'">';
 					echo get_field('codigo', $partido->ID);
 					echo '</a>';
@@ -26,7 +26,6 @@
 			?>
 			
 			<div class="clear"></div>
-			<div class="separator border"></div>
 		</div>	
 		</div>
 	</div>

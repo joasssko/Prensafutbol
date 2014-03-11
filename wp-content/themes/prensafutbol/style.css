@@ -45,7 +45,7 @@ h1, h2, h3, h4, h5 , h6{ font-family: 'Roboto Slab', georgia , serif; letter-spa
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a{ color: #333; text-decoration:none; }
 h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover{ color: #A9272D; text-decoration:none; }
 
-h1{ font-size:30px;}
+h1{ font-size:38px;}
 h2{ font-size:26px;}
 h3{ font-size:20px;}
 h4{ font-size:16px;}
@@ -331,7 +331,7 @@ float: right;
 .wp-paginate-comments .page {}
 .wp-paginate-comments .prev, .wp-paginate-comments .next {}
 
-
+#mobile .wp-paginate .title, #mobile .wp-paginate .gap {display: none;}
 
 
 
@@ -617,10 +617,13 @@ right: 0px;
 .bx-wrapper h2{ font-weight:300; margin:5px 0;}
 
 
-#bx-pager {
+/*#bx-pager {
 background-color: #555;
-}
+}*/
 
+#bx-pager {
+margin-top: 4px;
+}
 
 
 /*******************************************************************************************/
@@ -781,15 +784,21 @@ padding-top: 5px;
 
 
 /************************partidos *********************/
-.partidos{ min-height: 90px; padding: 10px 0; }
+.partidots{ background-image:url(images/bg_partidos.png); background-repeat:repeat-y; background-position:top center;}
+.partidots .border{ margin:0px; padding:0px;}
+.partidos{ padding: 23px 0; }
 .partidos a, .partidos a:hover{ color:#000; text-decoration:none;}
 .partidos .gr{ width:64px;}
 .partidos .gr , .partidos .time_data{ float:left; font-size:10px; font-family:helvetica, arial, sans-serif; text-align:center; line-height: 100%;}
 .partidos .equipo_ico{ width:35px !important ; min-height:35px !important; margin: 0 auto;}
-.partidos .equipo_name{ padding:0 5px; width:64px;}
-.partidos .time_data{ width:50px; font-weight:700}
+.partidos .equipo_ico img{ height:35px;}
+.partidos .equipo_name{ padding:0 5px; width:64px; height: 10px;}
+.partidos .time_data{ width:50px; font-weight:700; padding-top: 8px;}
 
-
-
+#mobile .partidos {padding: 5px 0px;float: left;border-top: 3px solid #525252;margin: 4px 4px;background-color: #f2f2f2;}
+#mobile .partidos .gr {width: 58px;}
+#mobile .partidos .time_data {width: 35px;}
+#mobile .partidos .goles {font-size: 22px;}
+#mobile .partidots{ background-image: none;margin-bottom: 15px;}
 
 

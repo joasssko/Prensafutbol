@@ -1,3 +1,4 @@
+<?php get_template_part('mobile/partidos')?>
 
 <div id="footermenu">
 	<div class="container">
